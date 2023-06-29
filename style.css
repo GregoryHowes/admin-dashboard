@@ -3,14 +3,21 @@
     padding: 0;
   }
   
+body {
+    
+}
+
 .container {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 1fr 8fr;
-    height: 100dvh;
+    min-height: 100dvh;
 }
 
+.white {
+    fill: white;
+}
 
 html {
     background-color: gainsboro;
@@ -63,6 +70,17 @@ html {
     background-color: rgb(109, 110, 212);
     grid-column: 1;
     grid-row: 1 / 4;
+  }
+
+  .sidebar ul img {
+    height: 1em;
+    color: white;
+    fill: white;
+  }
+
+  .sidebar ul p {
+    display: inline;
+    font-size: 2rem;
   }
 
   .projects {
