@@ -1,9 +1,14 @@
+/* ======================== */
+/* GENERAL */
+/* ======================== */
 * {
   margin: 0;
   padding: 0;
 }
 
-body {}
+body {
+
+}
 
 .container {
   text-align: center;
@@ -24,6 +29,10 @@ body {}
 html {
   background-color: gainsboro;
 }
+
+/* ======================== */
+/* HEADER */
+/* ======================== */
 
 .search img {
   height: 1em;
@@ -48,7 +57,7 @@ html {
   font-size: 1rem;
   grid-column: 2;
   grid-row: 1;
-  height: 2rem;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,6 +84,57 @@ html {
   list-style: none;
 }
 
+.control {
+    height: 100%;
+    background-color: yellow;
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .control button {
+    background-color: rgb(109, 110, 212);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 30px;
+  }
+  
+  .control .user-logo {
+  
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .control .user-logo img {
+    height: 2rem;
+    border-radius: 50%;
+    grid-column: 1;
+    grid-row: 1 span 3;
+  }
+
+  .control .user-logo p {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .control .user-logo h1 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+
+/* ======================== */
+/* SIDEBAR */
+/* ======================== */
+
 .sidebar {
   background-color: rgb(109, 110, 212);
   grid-column: 1;
@@ -92,43 +152,23 @@ html {
   font-size: 2rem;
 }
 
+
+
+
+
+/* ======================== */
+/* GRID */
+/* ======================== */
+
 .projects {
-  background-color: lightgray;
-  grid-column: 2;
-  grid-row: 3;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-}
-
-.control {
-  height: 2rem;
-  background-color: gray;
-  grid-column: 2;
-  grid-row: 2;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.control button {
-  background-color: rgb(109, 110, 212);
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1em;
-  border-radius: 30px;
-}
-
-.control img {
-  height: 4rem;
-  display: inline-flex;
-  border-radius: 50%;
-  flex-basis: 40%;
-}
+    background-color: lightgray;
+    grid-column: 2;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    height: 100%;
+  }
 
 .projects p {
   font-size: 18px;
@@ -142,6 +182,7 @@ html {
   background-color: #FFFFFF;
   color: black;
   text-align: center;
+ 
 }
 
 .card p {
